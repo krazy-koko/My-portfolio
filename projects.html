@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Portfolio – Projects</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="projects.html" class="active">Projects</a>
+    <a href="stats.html">Stats (Table)</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main>
+    <h1>Projects</h1>
+
+    <article class="card">
+      <h2>Gaming PC Build</h2>
+      <p>AM5 build focused on high-FPS 1440p gaming and clean cable management.</p>
+      <img src="https://picsum.photos/seed/case/900/350" alt="Gaming PC">
+    </article>
+
+    <article class="card">
+      <h2>HTML/CSS Mini Site</h2>
+      <p>A simple responsive site with a navbar, table, and form.</p>
+      <div class="video-wrap">
+        <iframe width="560" height="315"
+          src="https://www.youtube.com/embed/dD2EISBDjWM"
+          title="YouTube video" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+    </article>
+  </main>
+
+  <footer>© <span id="year"></span> [Your Name]</footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Portfolio – Contact</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="stats.html">Stats (Table)</a>
+    <a href="contact.html" class="active">Contact</a>
+  </nav>
+
+  <main>
+    <h1>Contact</h1>
+    <p>Prefer email? <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+
+    <form class="contact-form" action="#" method="post">
+      <fieldset>
+        <legend>Feedback Type</legend>
+        <label for="topic">Topic (Dropdown):</label>
+        <select id="topic" name="topic" required>
+          <option value="">-- Select --</option>
+          <option value="build-help">Build Help</option>
+          <option value="website-feedback">Website Feedback</option>
+          <option value="collab">Collaboration</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Contact Preference (Radio)</legend>
+        <label><input type="radio" name="pref" value="email" required> Email</label>
+        <label><input type="radio" name="pref" value="discord"> Discord</label>
+        <label><input type="radio" name="pref" value="phone"> Phone</label>
+      </fieldset>
+
+      <label for="msg">Comments</label>
+      <textarea id="msg" name="msg" rows="6" placeholder="Write your message here..."></textarea>
+
+      <div class="buttons">
+        <button type="submit">Submit</button>
+        <button type="reset" class="secondary">Reset</button>
+      </div>
+    </form>
+  </main>
+
+  <footer>© <span id="year"></span> [Your Name]</footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+:root{
+  --bg:#0f172a;
+  --fg:#e2e8f0;
+  --muted:#94a3b8;
+  --card:#111827;
+  --accent:#38bdf8;
+  --form:#0b2740;
+  --textarea:#0e3156;
+  --btn:#0891b2;
+  --btn2:#1f2937;
+  --table:#0b1324;
+  --border:#334155;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0; font-family:system-ui,Segoe UI,Roboto,sans-serif;
+  background:var(--bg); color:var(--fg); line-height:1.6;
+}
+
+nav{
+  display:flex; gap:1rem; padding:1rem; background:#0b1223; position:sticky; top:0;
+  border-bottom:1px solid var(--border);
+}
+nav a{ color:var(--fg); text-decoration:none; padding:.35rem .6rem; border-radius:.5rem }
+nav a:hover{ background:#111a33 }
+nav a.active{ background:#152245; color:var(--accent); }
+
+.hero{ padding:2rem; border-bottom:1px solid var(--border) }
+.hero img{ width:100%; height:auto; border-radius:12px; margin-top:1rem }
+
+main{ max-width:980px; margin:0 auto; padding:1.25rem }
+
+.card{
+  background:var(--card); border:1px solid var(--border); border-radius:12px;
+  padding:1rem; margin:1rem 0;
+}
+.video-wrap{ aspect-ratio:16/9; max-width:900px; }
+.video-wrap iframe{ width:100%; height:100%; border-radius:10px }
+
+table{
+  width:100%; border-collapse:collapse; background:var(--table); border:1px solid var(--border);
+}
+th,td{ padding:.75rem 1rem; border-bottom:1px solid var(--border); text-align:left }
+caption{ color:var(--muted); padding:.5rem 0 1rem; caption-side:top; font-style:italic }
+
+.contact-form{
+  background:var(--form); padding:1rem; border-radius:12px; border:1px solid var(--border);
+  max-width:700px;
+}
+.contact-form fieldset{ border:1px solid var(--border); border-radius:8px; padding:1rem; margin-bottom:1rem }
+.contact-form legend{ color:var(--accent); padding:0 .4rem }
+label{ display:block; margin:.4rem 0 .2rem }
+select, textarea{
+  width:100%; border:1px solid var(--border); border-radius:8px; padding:.6rem; color:var(--fg);
+  background:var(--textarea);
+}
+textarea::placeholder{ color:var(--muted) }
+.buttons{ display:flex; gap:.6rem; margin-top:.8rem }
+button{
+  border:none; padding:.6rem 1rem; border-radius:8px; cursor:pointer; color:white; background:var(--btn);
+}
+button.secondary{ background:var(--btn2) }
+button:hover{ filter:brightness(1.1) }
+
+footer{ color:var(--muted); padding:2rem; text-align:center; border-top:1px solid var(--border) }

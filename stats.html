@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Portfolio – Stats</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="stats.html" class="active">Stats (Table)</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main>
+    <h1>Skills & Hardware Stats</h1>
+    <table>
+      <caption>Core Skills & Tools</caption>
+      <thead>
+        <tr>
+          <th>Category</th>
+          <th>Item</th>
+          <th>Level</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Hardware</td><td>PC Building</td><td>Advanced</td></tr>
+        <tr><td>Networking</td><td>Subnetting</td><td>Intermediate</td></tr>
+        <tr><td>Security</td><td>CompTIA Security+ Prep</td><td>In Progress</td></tr>
+        <tr><td>Web</td><td>HTML/CSS</td><td>Intermediate</td></tr>
+      </tbody>
+    </table>
+  </main>
+
+  <footer>© <span id="year"></span> [Your Name]</footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
